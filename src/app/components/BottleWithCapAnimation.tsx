@@ -20,12 +20,13 @@ const BottleWithCapAnimation = () => {
   }, []);
 
   const handleToggle = async () => {
-    setIsOpen(!isOpen);
+   
     setTimeout(() => {
+      setIsOpen(!isOpen);
       document.getElementById("secoundpage")?.scrollIntoView({
         behavior: "smooth",
       });
-    }, 4200);
+    }, 8000);
   };
 
   const bottleVariants = {
