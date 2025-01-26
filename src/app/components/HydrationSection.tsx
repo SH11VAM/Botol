@@ -28,7 +28,7 @@ const HydrationEssentials = () => {
         {/* Product Grid */}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {arr.map((src, index) => (
+          {arr.map((src) => (
             <div
               key={src.id}
               className="relative bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300"

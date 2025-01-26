@@ -1,6 +1,10 @@
 import Image from "next/image";
 
-const Home2 = ({ isMobile }: any) => {
+interface HomeProps{
+  isMobile:boolean
+}
+
+const Home2 = ({ isMobile }: HomeProps) => {
   return (
     <div className="flex overflow-x-hidden lg:h-[720px] h-[360px] lg:min-w-full justify-center relative -z-10">
       <Image

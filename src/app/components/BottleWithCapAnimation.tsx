@@ -29,10 +29,10 @@ const BottleWithCapAnimation = () => {
     }, 3000);
 
     return () => window.removeEventListener("resize", updateScreenSize);
-  }, []);
+  },[]);
 
 
-  const handleToggle = async () => {
+  const handleToggle = () => {
     setIsOpen(!isOpen);
 
     setTimeout(() => {
