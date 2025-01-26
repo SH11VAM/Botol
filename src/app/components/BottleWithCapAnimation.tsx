@@ -128,30 +128,30 @@ const BottleWithCapAnimation = () => {
             >
               The Ultimate Companion
             </h1>
-            <h1 className="font-bold text-[3.5rem] text-[#333]">
+            <h1 className={`font-bold text-[3.5rem] text-[#333] ${familjenGrotesk.className}`}>
               {" "}
               for Hydration
             </h1>
-            <p style={{ fontSize: "1.2rem", color: "#555" }}>
+            <p style={{ fontSize: "1.2rem", color: "#555" }} className={`${familjenGrotesk.className}`}>
               We believe in the power of hydration. <br />
               Our mission is simple yet vital.
             </p>
           </motion.div>
         )}
-        <div className="flex absolute space-x-[700px] mt-[400px]">
+        <div className="flex absolute lg:space-x-[700px] space-x-56 mt-[400px]">
           <Image
             alt="image1"
-            width={150}
-            height={150}
+            width={120}
+            height={120}
             src="/HI1.png"
-            objectFit="cover"
+            objectFit="contain"
           />
           <Image
             alt="image1"
-            width={150}
-            height={150}
+            width={120}
+            height={120}
             src="/HI2.png"
-            objectFit="cover"
+            objectFit="contain"
           />
         </div>
       </div>
