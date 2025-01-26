@@ -16,7 +16,10 @@ const BottleWithCapAnimation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    handleToggle();
+    setTimeout(()=>{
+      handleToggle();
+    },2000)
+    
   }, []);
 
   const handleToggle = async () => {
@@ -27,7 +30,7 @@ const BottleWithCapAnimation = () => {
       document.getElementById("secoundpage")?.scrollIntoView({
         behavior: "smooth",
       });
-    }, 5000);
+    }, 4200);
   };
 
   const bottleVariants = {
