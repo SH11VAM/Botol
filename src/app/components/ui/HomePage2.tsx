@@ -1,21 +1,23 @@
 import Image from "next/image";
 
-const Home2 = () => {
+const Home2 = ({ isMobile }: any) => {
   return (
-    <div className="flex sm:min-w-full overflow-x-hidden md:min-w-full lg:min-w-full xl:min-w-full justify-center relative -z-10">
+    <div className="flex overflow-x-hidden lg:h-[720px] h-[360px] lg:min-w-full justify-center relative -z-10">
       <Image
         src="/bottleHand.jpg"
         alt="bottle"
-        width={635}
-        height={100}
+        width={isMobile ? 250 : 640}
+        height={isMobile ? 250 : 640}
         layout="intrinsic"
+        objectFit="contain"
       />
       <Image
         src="/option.png"
         alt="bottle"
-        width={635}
-        height={100}
+        width={isMobile ? 250 : 640}
+        height={isMobile ? 250 : 640}
         layout="intrinsic"
+        objectFit="contain"
       />
     </div>
   );
