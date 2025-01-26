@@ -26,7 +26,7 @@ const BottleWithCapAnimation = () => {
       document.getElementById("secoundpage")?.scrollIntoView({
         behavior: "smooth",
       });
-    }, 8000);
+    }, 5000);
   };
 
   const bottleVariants = {
