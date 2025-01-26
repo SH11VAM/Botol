@@ -5,24 +5,24 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const Slide1 = () => {
-
   const [value, setValue] = useState(false);
 
-  const path ="M 15 80  L 150 40 Q 160 40, 250 40, L 680 40, Q 680 40, 780 10, L 1000 10";
+  const path =
+    "M 15 80  L 150 40 Q 160 40, 250 40, L 680 40, Q 680 40, 780 10, L 1000 10";
 
   useEffect(() => {
     setTimeout(() => {
       setValue(!value);
-    } , 2000);
-
-
+    }, 2000);
   }, []);
- 
+
   return (
     <>
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
-        className={`lg:max-w-6xl lg:w-[100%] lg:h-[450px] w-[340px] h-[120px] mb-[16rem] mt-8 lg:mt-5  ml-[4rem]  ${ value ?"visible" :"hidden"} `}
+        className={`lg:max-w-6xl lg:w-[100%] lg:h-[450px] w-[340px] h-[120px] mb-[16rem] mt-8 lg:mt-5  ml-[4rem]  ${
+          value ? "visible" : "hidden"
+        } `}
         viewBox="0 0 1000 100"
       >
         {/* Main Path */}
@@ -130,7 +130,6 @@ const Slide1 = () => {
           transition={{
             duration: 4,
             ease: "easeInOut",
-            
           }}
           strokeWidth={4}
           strokeDasharray="0 1"
@@ -145,8 +144,6 @@ const Slide1 = () => {
         <circle cx="680" cy="40" r="8" fill="#f6687a" />
         <circle cx="780" cy="12" r="8" fill="#f6687a" />
       </motion.svg>
-
-      
     </>
   );
 };

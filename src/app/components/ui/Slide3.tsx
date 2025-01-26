@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -7,17 +7,27 @@ import { useState, useEffect } from "react";
 const Slide3 = () => {
   const [value, setValue] = useState(false);
 
-    useEffect(() => {
-      setTimeout(() => {
-        setValue(!value);
-      }, 3000);
-    }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setValue(!value);
+    }, 3000);
+  }, []);
 
   return (
     <>
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
-        className={`lg:max-w-6xl lg:w-[100%] lg:h-[450px] w-[340px] h-[120px] mb-[16rem] mt-8 lg:mt-5  ml-[4rem] ${value ? "visible" : "hidden"} `}
+        className={`
+          lg:max-w-6xl
+          lg:w-[100%]
+          lg:h-[450px]
+          w-[340px] 
+          h-[120px] 
+          mb-[16rem] 
+          mt-8 
+          lg:mt-5 
+          ml-[4rem]
+           ${value ? "visible" : "hidden"} `}
         viewBox="0 0 1000 100"
       >
         {/* Main Path */}
