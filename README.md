@@ -1,17 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BOTOL
 
-## Getting Started
+This project demonstrates the use of Framer Motion and SVG to create a smooth and interactive sliding animation for timelines or other horizontal/vertical layouts.
 
-First, run the development server:
+## Installation
+
+Use the package manager [npm](https://docs.npmjs.com/) to install.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install 
+```
+Use the package manager [framer-motion](https://www.npmjs.com/package/framer-motion) to install.
+
+```bash
+npm install framer-motion 
+```
+
+## Run
+
+```bash
+npm run dev 
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
