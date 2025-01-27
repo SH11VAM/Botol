@@ -2,6 +2,10 @@
 
 This project demonstrates the use of Framer Motion and SVG to create a smooth and interactive sliding animation for timelines or other horizontal/vertical layouts.
 
+## Preview
+
+[view](https://botol-puce.vercel.app/)
+
 ## Clone
 
 ```bash
