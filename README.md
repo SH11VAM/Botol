@@ -2,6 +2,12 @@
 
 This project demonstrates the use of Framer Motion and SVG to create a smooth and interactive sliding animation for timelines or other horizontal/vertical layouts.
 
+## Clone
+
+```bash
+git clone https://github.com/SH11VAM/Botol.git 
+```
+
 ## Installation
 
 Use the package manager [npm](https://docs.npmjs.com/) to install.
